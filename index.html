@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Prescott Sun Portfolio</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!-- Bulma Version 0.7.x-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../css/personal.css">
-  <script async type="text/javascript" src="../js/bulma.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/personal.css">
+  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <script async type="text/javascript" src="scripts/bulma.js"></script>
 </head>
 
 <body>
@@ -40,6 +42,12 @@
           </span>
           <span>Resume</span>
         </a>
+        <a class="navbar-item" href="#skills">
+            <span class="icon">
+              <i class="fas fa-user-cog"></i>
+            </span>
+            <span>Skills</span>
+          </a>
         <a class="navbar-item" href="#portfolio">
           <span class="icon">
             <i class="fas fa-th-list"></i>
@@ -57,36 +65,51 @@
   </nav>
 
   <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar">
-    <div class="hero-body">
-      <div class="container">Hello! I'm
-        <h1 class="title is-1">
-          Prescott Sun
-        </h1>
-        <h2 class="subtitle is-3">
-          Software Engineer
-        </h2>
+  <section class="hero is-info is-medium">
+      <div class="hero-body columns">
+        <div class="container column">Hello! I'm
+          <h1 class="title is-1">
+              Prescott Sun
+          </h1>
+          <h2 class="subtitle is-3">
+              Software Engineer
+          </h2>
+        </div>
+        <div class="column">
+            <!-- Profile picture -->
+            <!-- <div class="card">
+              <div class="card-image"> -->
+                <figure class="image">
+                  <img id="profile-picture" class="is-rounded" src="images/profile_picture_web_res.jpg" alt="Profile Picture">
+                </figure>
+              <!-- </div>
+            </div> -->
+          </div>
       </div>
-    </div>
-  </section>
+      
+    </section>
 
   <!-- About -->
   <section class="section" id="about">
     <!-- Title -->
     <div class="section-heading">
       <h3 class="title is-2">About Me</h3>
-      <h4 class="subtitle is-5">Software engineer</h4>
-      <div class="container">
-        <p>Went to school studying mechanical engineering. Got my first job out of college as a business intelligence analyst. I always found the coding portions of each to be the most interesting. Whether it was </p>
-      </div>
+      <!-- <h4 class="subtitle is-5">Full Stack Web Developer</h4> -->
     </div>
-
-    <div class="columns has-same-height is-gapless">
+    <div class="columns has-same-height">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+                <p>A lifelong computer and tech enthusiast. I graduated from the University of Connecticut with a Bachelor of Science in mechanical engineering. I moved to Atlanta for my first job out of school, working as a business intelligence analyst. At school and in my workplace, I always found the times when I was trying to solve problems and complete tasks with code to be the most interesting. Whether it was writing a script to solve a math problem in Matlab or creating macros in Visual Basic to automate tasks in Excel, I would become engrossed in the task. That interest has grown into a passion that I am now seeking to turn into a full-time career.
+                </p>
+              </div>
+            </div>
+        </div>
       <div class="column">
         <!-- Profile -->
         <div class="card">
           <div class="card-content">
-            <h3 class="title is-4">Profile</h3>
+            <h3 class="title is-4">Contact Info</h3>
 
             <div class="content">
               <table class="table-profile">
@@ -110,23 +133,14 @@
             </div>
             <br>
             <div class="buttons has-addons is-centered">
-              <a href="#" class="button is-link is-outlined">Github</a>
-              <a href="#" class="button is-link is-outlined">LinkedIn</a>
+              <a href="#" class="button is-link is-outlined"><i class="fab fa-github"></i>Github</a>
+              <a href="#" class="button is-link is-outlined"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="column">
-        <!-- Profile picture -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="" alt="Placeholder image">
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="column">
+
+      
   </section>
 
   
@@ -134,8 +148,8 @@
   <section class="section" id="resume">
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
-      <h4 class="subtitle is-5">One page on my skills and work experience</h4>
-      <a href="#" class="button is-link is-medium">
+      <h4 class="subtitle is-5">Summary of my skills, education, and work experience</h4>
+      <a href="https://drive.google.com/file/d/1mQ7_OuMDMAEyHubdNZkJs-Lx9blRsmtl/view?usp=sharing" target="_blank" class="button is-link is-large">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
@@ -144,140 +158,143 @@
     </div>
   </section>
 
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="section-heading">
+      <h3 class="title is-2">Skills</h3>
+      <br>
+    </div>
+    <div class="container">
+        <div class="columns">
+          <div class="column has-text-centered">
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-javascript-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">Javascript</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-nodejs-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">Node.js</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-git-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">Git</h1>
+          </div>
+          
+          <div class="column has-text-centered">
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-html5-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">HTML5</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-express-original colored"></i>
+                </span>
+              <h1 class="is-size-3">Express</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-ubuntu-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">Ubuntu</h1>
+          </div>
+
+          <div class="column has-text-centered">
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-css3-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">CSS3</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-postgresql-plain colored"></i>
+                </span>
+              <h1 class="is-size-3">PostgreSQL</h1>
+                <br>
+              <span class="has-text-info">
+                  <i class="fa-7x devicon-amazonwebservices-original colored"></i>
+                </span>
+              <h1 class="is-size-3">Amazon Web Services</h1>
+          </div>
+    </div>
+  </section>
+
   <!-- Portfolio -->
   <section class="section" id="portfolio">
-    <div class="container">
-      <div class="section-heading">
-        <h3 class="title is-2">Portfolio</h3>
-        <h4 class="subtitle is-5">My latest works</h4>
-      </div>
+    <div class="section-heading">
+      <h3 class="title is-2">Portfolio</h3>
       <br>
-
+      <!-- <h4 class="subtitle is-5">My latest works</h4> -->
+    </div>
+    <div class="container">
       <div class="container portfolio-container">
         <div class="columns">
-          <div class="column is-full">
-            <!-- admin -->
+          <div class="column">
+<!-- Code.log(++) -->
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">
-                  <span><a href="https://www.bustalker.com">BusTalker</a></span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/prescottsun/bus-talker">
-                      <span class="tag is-default">Github</span>
-                    </a>
+                  <span><a href="#">Code.log(++)</a></span>
+                  <span class="">
+                      <span class="tag is-default">Node.js</span>
+                      <span class="tag is-default">Express</span>
+                      <span class="tag is-default">PostgreSQL</span>
+                      <span class="tag is-default">Bulma</span>
                   </span>
                 </p>
               </header>
-              <div class="card-content">
+              <div class="card-content portfolio-content">
                 <figure class="image">
-                  <img src="../images/admin.png" alt="Admin template screenshot">
+                  <a href="#" target="_blank"><img src="images/code_log.png" alt="Code Log Home Page" ></a>
                 </figure>
               </div>
               <footer class="card-footer">
-                <a href="https://www.bustalker.com" class="card-footer-item">Live Site</a>
-                <a href="https://github.com/prescottsun/bus-talker" target="_blank" class="card-footer-item">Source
-                  Code</a>
+                <a href="https://github.com/prescottsun/code-log" target="_blank" class="card-footer-item">Source Code</a>
+                <a href="#" class="card-footer-item">Live Site</a>
               </footer>
             </div>
-            <!-- cards -->
+<!-- BusTalker -->
             <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Cards</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">?</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/cards.png" alt="Cards template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cards.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span><a href="https://www.bustalker.com">BusTalker</a></span>
+                    <span class="">
+                        <span class="tag is-default">Javascript</span>
+                        <span class="tag is-default">HTML</span>
+                        <span class="tag is-default">CSS</span>
+                        <span class="tag is-default">jQuery</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content portfolio-content">
+                  <figure class="image">
+                    <a href="https://www.bustalker.com" target="_blank"><img src="images/bus_talker.png" alt="BusTalker Home Page"></a>
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/prescottsun/bus-talker" target="_blank" class="card-footer-item">Source Code</a>
+                  <a href="https://www.bustalker.com" class="card-footer-item">Live Site</a>
+                </footer>
             </div>
-            <!-- forum -->
+            <!-- Space Force Prime -->
             <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Forum</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/forum.png" alt="Hero template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/forum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/forum.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- insta album -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>InstaAlbum</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/instaalbum.png" alt="Landing template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/instaAlbum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/instaAlbum.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
-            </div>
-            <!-- landing -->
-            <div class="card">
-              <header class="card-header">
-                <p class="card-header-title">
-                  <span>Landing</span>
-                  <span class="is-pulled-right">
-                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a>
-                    <span class="tag is-default">Desktop</span>
-                    <span class="tag is-default">Mobile</span>
-                  </span>
-                </p>
-              </header>
-              <div class="card-content">
-                <figure class="image">
-                  <img src="../images/landing.png" alt="Landing template screenshot">
-                </figure>
-              </div>
-              <footer class="card-footer">
-                <a href="templates/landing.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html" class="card-footer-item">Source
-                  Code</a>
-              </footer>
+                <header class="card-header">
+                  <p class="card-header-title">
+                    <span>Space Force Prime</span>
+                    <span class="">
+                        <span class="tag is-default">Python</span>
+                        <span class="tag is-default">Pygame</span>
+                    </span>
+                  </p>
+                </header>
+                <div class="card-content portfolio-content">
+                  <figure class="image">
+                    <img id="pygame-img" src="images/space_force_prime.png" alt="Space Force Prime in-game">
+                  </figure>
+                </div>
+                <footer class="card-footer">
+                  <a href="https://github.com/prescottsun/space-force-prime" target="_blank" class="card-footer-item">Source Code</a>
+                </footer>
             </div>
 
           </div>       
@@ -285,6 +302,60 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+        <div class="section-heading">
+          <h3 class="title is-2">Contact Me</h3>
+        <br>
+
+        <div class="columns">
+          <div class="column is-6">
+            <div class="box">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Enter Name">
+                </div>
+              </div>
+  
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="email" placeholder="Enter Email Address" value="">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Enter Message"></textarea>
+                </div>
+              </div>
+  
+              <div class="field is-grouped has-text-centered">
+                <div class="control">
+                  <button class="button is-link is-large"><span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>Submit</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <!-- <footer class="footer">
+      <div class="section-heading">
+      </div>
+    </footer> -->
 
 </body>
 

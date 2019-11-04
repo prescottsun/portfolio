@@ -1,11 +1,11 @@
 .has-same-height .card {
   height: 320px;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.card-content h3 {
+/* .card-content h3 {
   text-align: center;
-}
+} */
 
 .table-profile td,
 th {
@@ -15,7 +15,7 @@ th {
 .table-profile td:first-of-type {
   font-weight: bold;
 }
-
+/* 
 .skills-content .media {
   margin: 0 !important;
   padding: 4px !important;
@@ -24,19 +24,44 @@ th {
 
 .skills-content .progress {
   height: 4px !important;
-}
+} */
 
-.custom-tags {
+/* .custom-tags {
   text-align: center !important;
   display: block;
-}
+} */
 
 .portfolio-container .card {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 .section-heading {
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 6em;
+  /* margin-top: 1em; */
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-picture {
+  transform: rotate(-90deg);
+  max-height: 400px;
+  width: auto;
+  margin: 3rem;
+}
+
+.image img{
+  /* overflow: auto; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pygame-img {
+  max-height: 600px;
+  width: auto;
+  
 }
