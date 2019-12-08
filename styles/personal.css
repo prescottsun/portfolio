@@ -1,5 +1,5 @@
 .has-same-height .card {
-  height: 320px;
+  height: 25rem;
   overflow: auto;
 }
 
@@ -47,7 +47,7 @@ th {
 }
 
 #profile-picture {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   max-height: 400px;
   width: auto;
   margin: 3rem;
@@ -61,7 +61,7 @@ th {
 }
 
 #pygame-img {
-  max-height: 600px;
+  max-height: 300px;
   width: auto;
   
 }
