@@ -102,15 +102,12 @@
       <div class="column">
         <div class="card">
           <div class="card-content">
-            <p>A lifelong computer and tech enthusiast. I graduated from the University of Connecticut with a Bachelor
+            <p class="subtitle is-5">A lifelong computer and tech enthusiast. I graduated from the University of Connecticut with a Bachelor
               of Science in mechanical engineering. I moved to Atlanta for my first job out of school, working as a
               business intelligence analyst. At school and work, I always found the times when I was trying
               to solve problems and complete tasks through programming to be the most interesting. I was always the most
               enthusiastic when I programmed a script to solve math problems in Matlab, created macros in Visual Basic
-              to automate tasks in Excel, or used SQL queries for financial data analysis. That interest has grown into
-              a passion that I am seeking to
-              turn into a
-              full-time career.
+              to automate tasks in Excel, or used SQL queries for financial data analysis. That interest led me to enroll in and complete DigitalCrafts' full stack immersive web development bootcamp to acquire the skills necessary to pursue a career in the field.
             </p>
           </div>
         </div>
@@ -142,10 +139,10 @@
               </table>
             </div>
             <br>
-            <div class="buttons has-addons is-centered">
-              <a href="https://github.com/prescottsun" class="button is-link is-outlined"><i
+            <div class="buttons is-centered">
+              <a href="https://github.com/prescottsun" class="button is-link is-outlined is-large"><i
                   class="fab fa-github"></i>Github</a>
-              <a href="https://www.linkedin.com/in/prescott-sun/" class="button is-link is-outlined"><i
+              <a href="https://www.linkedin.com/in/prescott-sun/" class="button is-link is-outlined is-large"><i
                   class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
           </div>
@@ -181,9 +178,9 @@
       <div class="columns">
         <div class="column has-text-centered">
           <span class="has-text-info">
-            <i class="fa-4x devicon-javascript-plain colored"></i>
+            <i class="fa-4x devicon-react-original colored"></i>
           </span>
-          <h1 class="is-size-4">Javascript</h1>
+          <h1 class="is-size-4">React</h1>
           <br>
           <span class="has-text-info">
             <i class="fa-4x devicon-css3-plain colored"></i>
@@ -197,12 +194,13 @@
         </div>
 
 
-        <div class="column has-text-centered">
-          <span class="has-text-info">
-            <i class="fa-4x devicon-react-original colored"></i>
-          </span>
-          <h1 class="is-size-4">React</h1>
-          <br>
+
+          <div class="column has-text-centered">
+            <span class="has-text-info">
+              <i class="fa-4x devicon-javascript-plain colored"></i>
+            </span>
+            <h1 class="is-size-4">Javascript</h1>
+            <br>
           <span class="has-text-info">
             <i class="fa-4x devicon-nodejs-plain colored"></i>
           </span>
@@ -250,11 +248,77 @@
       <div class="container portfolio-container">
         <div class="columns">
           <div class="column">
+            <!-- CodeTrain -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span><a href="https://prescottsun.github.io/codetrain/" target="_blank">CodeTrain</a></span>
+                  <span class="">
+                    <span class="tag is-default">React</span>
+                    <span class="tag is-default">Redux</span>
+                    <span class="tag is-default">PostgreSQL</span>
+                    <span class="tag is-default">Node.js</span>
+                    <span class="tag is-default">Express</span>
+                    <span class="tag is-default">Passport.js</span>
+                  </span>
+                </p>
+              </header>
+              <div class="columns card-content portfolio-content">
+                <figure class="column image">
+                  <a href="https://prescottsun.github.io/codetrain/" target="_blank"><img src="images/codetrain_messages.png"
+                      alt="CodeTrain Messages Page"></a>
+                </figure>
+                <content class='column content'>
+                <p>An community platform for coding bootcamp students to share learning resources and prospective employers to post their job listings and connect with students. Built with the PERN stack. Features include:
+                </p>
+                <ul>
+                  <li>Three different user roles (student, company, admin) with unique functionality and views.</li>
+                  <li>User account creation and logins with user authentication through Passport.js.</li>
+                  <li>Learning resource and job listing boards with full create, read, update, and delete actions available.</li>
+                  <li>Job application functionality. Bootcampers can apply to job listings. Company users can review applicants' qualifications and reject or accept them to go forward in the hiring process.</li>
+                  <li>User messaging and reporting system. Users can send and reply to messages from other users. Regular users can report issues to be resolved by admin users.</li>
+                </ul>
+              </content>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/prescottsun/codetrain" target="_blank" class="card-footer-item">Source
+                  Code</a>
+                <a href="https://prescottsun.github.io/codetrain/" target="_blank" class="card-footer-item">Live Site</a>
+              </footer>
+            </div>
+             <!-- City Stats -->
+             <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span><a href="https://prescottsun.github.io/city-stats/" target="_blank">City Stats</a></span>
+                  <span class="">
+                    <span class="tag is-default">React</span>
+                    <span class="tag is-default">PostgreSQL</span>
+                    <span class="tag is-default">Node.js</span>
+                    <span class="tag is-default">Express</span>
+                    <span class="tag is-default">Firebase</span>
+                  </span>
+                </p>
+              </header>
+              <div class="columns card-content portfolio-content">
+                <figure class="column image">
+                  <a href="https://prescottsun.github.io/city-stats/" target="_blank"><img src="images/city_stats.png"
+                      alt="Code Stats Quality of Life Page"></a>
+                </figure>
+                <p class='column'>An urban area metrics site for prospective residents looking to move to a new city. Users can search for cities by name or select from a list of urban cities. The site utilizes the <a href='https://developers.teleport.org/api/'>Teleport API</a> for its various quality of life indexes. The application is built with the PERN stack. Users can login with their Google accounts with Firebase. 
+                </p>
+              </div>
+              <footer class="card-footer">
+                <a href="https://github.com/prescottsun/city-stats" target="_blank" class="card-footer-item">Source
+                  Code</a>
+                <a href="https://prescottsun.github.io/city-stats" target="_blank" class="card-footer-item">Live Site</a>
+              </footer>
+            </div>
             <!-- Code.log(++) -->
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">
-                  <span><a href="https://prescottsun.github.io/code-log/">Code.log(++)</a></span>
+                  <span><a href="https://prescottsun.github.io/code-log/" target="_blank">Code.log(++)</a></span>
                   <span class="">
                     <span class="tag is-default">Node.js</span>
                     <span class="tag is-default">Express</span>
@@ -278,14 +342,14 @@
               <footer class="card-footer">
                 <a href="https://github.com/prescottsun/code-log" target="_blank" class="card-footer-item">Source
                   Code</a>
-                <a href="https://prescottsun.github.io/code-log/" class="card-footer-item">Live Site</a>
+                <a href="https://prescottsun.github.io/code-log/" target="_blank" class="card-footer-item">Live Site</a>
               </footer>
             </div>
             <!-- BusTalker -->
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">
-                  <span><a href="https://www.bustalker.com">BusTalker</a></span>
+                  <span><a href="https://www.bustalker.com" target="_blank">BusTalker</a></span>
                   <span class="">
                     <span class="tag is-default">Javascript</span>
                     <span class="tag is-default">HTML</span>
@@ -308,7 +372,7 @@
               <footer class="card-footer">
                 <a href="https://github.com/prescottsun/bus-talker" target="_blank" class="card-footer-item">Source
                   Code</a>
-                <a href="https://www.bustalker.com" class="card-footer-item">Live Site</a>
+                <a href="https://www.bustalker.com" target="_blank" class="card-footer-item">Live Site</a>
               </footer>
             </div>
             <!-- Space Force Prime -->
@@ -324,7 +388,7 @@
               </header>
               <div class="columns card-content portfolio-content">
                 <figure class="column image">
-                  <img id="pygame-img" src="images/space_force_prime.png" alt="Space Force Prime in-game">
+                  <a href="https://github.com/prescottsun/space-force-prime/" target="_blank"><img id="pygame-img" src="images/space_force_prime.png" alt="Space Force Prime in-game"></a>
                 </figure>
                 </figure>
                 <p class='column'>A space shoot 'em up made in Python with the Pygame library.The player's score
